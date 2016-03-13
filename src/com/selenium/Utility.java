@@ -24,7 +24,7 @@ public class Utility {
     /* Generate full xpath for given element
     *  Code from StackOverflow
     *  It is recursive, pass "" to parameter current */
-    private static String generateXPATH(WebElement childElement, String
+    public static String generateXPATH(WebElement childElement, String
             current) {
         String childTag = childElement.getTagName();
         if (childTag.equals("html")) {

@@ -7,10 +7,20 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 /*
-*  Minimal code to use Selenium WebDriver with JUnit */
+*  Minimal code to use Selenium WebDriver with JUnit
+*
+*  To run standalone, use JUnitCore
+*  Result result = JUnitCore.runClasses(Playground.class);
+*
+*  Or better off to copy/paste this code than using inheritance. Inheritance
+*  is not meant for code reuse.
+*  */
 public class WebDriverSkeleton {
-    WebDriver driver;
-    private String url;
+    public WebDriver driver;
+    public String url;
+
+    public WebDriverSkeleton() {
+    }
 
     @Before
     public void setUp() {
